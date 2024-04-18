@@ -1,0 +1,50 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+
+% Title page
+\title{Early Diagnosis of Diabetes using Machine Learning}
+\author{Presented by:\\\\
+TRV21IT001 AADARSH S\\\\
+TRV21IT029 HRITHIK MANOJ NAIR\\\\
+TRV21IT045 NIKHIL SANJU}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Introduction}
+The early diagnosis of diabetes is crucial for avoiding major risks associated with the disorder. This research proposes a machine learning pipeline for predicting the onset of diabetes with high accuracy.
+\end{frame}
+
+\begin{frame}{Dataset}
+The research uses a novel diabetes dataset that is gender-neutral and representative, unlike the well-known PID dataset.
+\end{frame}
+
+\begin{frame}{Machine Learning Pipeline}
+The machine learning pipeline involves:
+\begin{itemize}
+    \item Multiple feature engineering pipelines
+    \item Feature selection using ANOVA filter and Crow Search Optimization algorithm
+    \item Feature extraction using Singular Value Decomposition
+    \item Classification using heterogeneous classifiers like Naive Bayes', Logistic Regression, K-Nearest Neighbor, Decision Trees, Support Vector Machine, Random Forest, AdaBoost, and GradientBoost
+    \item Stacking ensemble of classifiers
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Performance Evaluation}
+Performance evaluation is done through Repeated Stratified K-fold Cross Validation using metrics like accuracy, precision, recall, F1 Score, and area under Receiver Operating Characteristic curve.
+\end{frame}
+
+\begin{frame}{Results}
+The highest accuracy achieved is 98.4 percent with the Crow Search algorithm through a stacking ensemble of multiple heterogeneous classifiers. Comparative analysis with a recent related work on the same dataset shows improved accuracy using a reduced feature set.
+\end{frame}
+
+\begin{frame}{Conclusion}
+The proposed machine learning pipeline shows promising results for early diagnosis of diabetes, outperforming existing methods on the same dataset.
+\end{frame}
+
+\end{document}
+
